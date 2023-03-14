@@ -1,11 +1,13 @@
 import "./Header.css"
+import HeaderLogo from "../../Assets/Images/site-header-logo.svg"
+
 function Header() {
   return (
     <header className="site-header">
       <div className="container">
         <a className="site-header-logo" href="#link">
           <img
-            src="https://placehold.jp/150x150.png"
+            src={HeaderLogo}
             alt="placeholder"
             width={150}
             height={150}
