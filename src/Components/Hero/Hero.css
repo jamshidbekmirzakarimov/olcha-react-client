@@ -1,0 +1,75 @@
+.hero-section {
+  padding-top: 62px;
+}
+
+.her-section-list {
+  width: 880px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.hero-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-section-img-box {
+  width: 880px;
+  height: 346px;
+  background: #ecf1f4;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  min-height: 346px;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  background: linear-gradient(180deg, #664ba4 0%, #323474 100%);
+  border-radius: 10px;
+}
+
+.hero-section-card-title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.hero-section-card-subtitle {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FAFCFE;
+  opacity: 0.6;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.hero-section-card-img{
+  margin-bottom: 20px;
+}
+
+.hero-card-btn{
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 140%;
+  color: #FFFFFF;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  padding: 10px 20px;
+}
