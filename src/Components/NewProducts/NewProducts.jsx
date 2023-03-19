@@ -1,19 +1,18 @@
-import "./BestProducts.css";
+import "./NewProducts.css";
+
 import { products } from "../../data/products";
-function BestProducts() {
+function NewProducts() {
   return (
     <section className="best-product-section">
       <div className="container">
-        <h2 className="best-product-section-title">
-          Oyning eng mashhur tovarlari
-        </h2>
+        <h2 className="best-product-section-title">Yangi tovarlar</h2>
         <p className="best-product-section-sub">
-          🔎 Qidiruv tizimlaridagi so'rovlar, ⭐️ platformadagidagi sharhlar va
-          ❤️ ijtimoiy tarmoqlardagi postlar soni bo'yicha
+          Shu hafta ichida keltirilgan va admin paneldagi 📊 statistika bo’yicha
+          odamlarda ko’p qiziqish uyg’otayotgan tovarlar
         </p>
 
         <ul className="best-product-section-list">
-          {products.slice(0, 8).map((product) => (
+          {products.slice(8, 16).map((product) => (
             <li className="best-product-section-item">
               <img
                 className="best-product-item-img"
@@ -28,10 +27,10 @@ function BestProducts() {
             </li>
           ))}
         </ul>
-        <button className="best-product-btn">Mashhur tovarlar</button>
+        <button className="best-product-btn">Barcha yangi tovarlar</button>
       </div>
     </section>
   );
 }
 
-export default BestProducts;
+export default NewProducts;

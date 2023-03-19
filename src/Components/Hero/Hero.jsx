@@ -1,5 +1,6 @@
 import "./Hero.css";
 
+import { products } from "../../data/products";
 import MixerImg from "../../Assets/Images/mikser.png";
 import MuzlatImg from "../../Assets/Images/sovutgich.png";
 import MevaImg from "../../Assets/Images/meva.png";
@@ -13,79 +14,13 @@ function Hero() {
   return (
     <section className="hero-section">
       <div className="container">
-        <ul className="her-section-list">
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={MixerImg}
-              alt="mikser img"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={MuzlatImg}
-              alt="sovutgich img"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={MevaImg}
-              alt="meva ezgiz"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={MesarovkaImg}
-              alt="Mesarovka img"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={DiskTelImg}
-              alt="Disk Tel"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={BookAllImg}
-              alt="Book All Img"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={BookIbiImg}
-              alt="Book ibi img"
-              width={60}
-              height={60}
-            />
-          </li>
-          <li className="hero-section">
-            <img
-              className="hero-section-item-img"
-              src={MixerImg}
-              alt="mixer img"
-              width={60}
-              height={60}
-            />
-          </li>
+        <ul className="hero-section-list">
+          {products.slice(0,8).map((product) => (
+            <li className="hero-section-title">
+               <img src={product.image} width={60} height={60} alt={product.title}  />
+           </li>
+           
+             ))}
         </ul>
 
         <div className="hero-section-wrapper">
